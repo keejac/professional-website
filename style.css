@@ -8,6 +8,19 @@ h1 {
 font-family: arial, sans-serif;
 }
 
+a {
+color: #fff;
+background-color: darkblue;
+padding: 1rem;
+margin: 1rem;
+border: 2px solid yellow;
+}
+
+a:hover {
+cursor: pointer;
+scale: 1.2;
+}
+
 #siteDescription {
 display: none;
 }
@@ -19,7 +32,6 @@ display: block;
 background-color: #ffffff;
 padding: 1rem;
 margin-top: 4rem;
-margin-right: 10%;
 }
 
 #pageContent {
