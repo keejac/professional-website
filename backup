@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keenan Jackson's Professional Website and Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="siteHeader">
+<h1 id="siteTitle">Keenan Jackson</h1>
+<h2 id="siteDescription">Product manager and educator with art and design background</h2> 
+</div>
+<div id="navigation"><p><a href="/">Now</a></p>
+<p><a href="/portfolio">Portfolio</a></p>
+<p><a>CV</a></p>
+</div>
+<div id="pageContent">
+<h1>Now</h1>
+<p>I'm Keenan Jackson (he/they), currently working as a product manager of digital learning at <a href="https://catalyst.harvard.edu/" target="_blank">Harvard Catalyst.</a>&nbsp;</p>
+<p><span style="text-decoration: line-through;">Learn more about my work by visiting my Portfolio.</span>&nbsp;<br />I am building out my portfolio so you can learn more about my work. Please check back soon!</p>
+<p>I live and work in Cumberland, Maryland, a valley micropolis in the Appalachian Mountains that catches passing clouds. I am lucky to share most days with my domestic partner Jacob, our dog Jack, and our cats Lola and Dom.&nbsp;</p>
+<p>Get in touch with me by email:</p>
+<p>keenan [dot] edu [at] proton [dot] me</p>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
