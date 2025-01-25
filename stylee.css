@@ -18,6 +18,7 @@ background-color: lightpink;
 
 .right {
   width: 20%;
+  box-shadow: 0 0;
 }
 
 .middle {
@@ -45,7 +46,6 @@ background-color: lightpink;
 img {
   width: 300px;
   height: 300px;
-  box-shadow: 8px 8px 4px #da1b61;
 }
 
 .stick {
