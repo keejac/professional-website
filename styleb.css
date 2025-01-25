@@ -43,6 +43,9 @@ background-color: lightpink;
     padding: 1rem;
     margin-bottom: 1rem;
   }
+  .right {
+    margin-bottom: 0;
+  }
 }
 
 img {
