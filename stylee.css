@@ -1,0 +1,84 @@
+/* stylee.css */
+
+body {
+background-color: lightpink;
+  font-family: arial, sans-serif;
+  overflow-x: none;
+}
+
+.col {
+  float: right;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 8px 8px 4px #5e4b8b;
+}
+
+.right {
+  width: 20%;
+}
+
+.middle {
+  width: 20%;
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.left {
+  width: 40%;
+  float: left;
+}
+
+@media screen and (max-width: 992px) {
+  .col {
+    width: 80%;
+    float: none;
+    margin-right: 0.25rem;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  box-shadow: 8px 8px 4px #da1b61;
+}
+
+.stick {
+  position: sticky;
+  top: 0;
+  display: block;
+  background-color: lightpink;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+#navigation h2 {
+font-size: 1rem;
+}
+
+#navLink a {
+color: #6d9dc5;
+}
+
+#navLink {
+padding: 0.25rem;
+margin-left: 0.25rem;
+}
+
+#navigation a:hover {
+cursor: pointer;
+scale: x 2;
+}
+
+#siteDescription {
+display: none;
+}
+
+#pageContent {
+background-color: #ffffff; 
+}
