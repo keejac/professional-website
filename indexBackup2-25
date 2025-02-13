@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keenan Jackson's Professional Website and Portfolio</title>
+    <link rel="stylesheet" href="styleb.css">
+</head>
+<body>
+<div class="stick" id="siteHeader">
+    <h1 id="siteTitle">Keenan Jackson</h1>
+    <h2 id="siteDescription">Product manager and educator with art and design background</h2> 
+</div>
+
+ <div class="col right" style="background-color: transparent;">
+        <img src="/KJ_Color2.png" alt="Portrait of Keenan Jackson">
+ </div>
+
+<div class="col middle" id="navigation">
+    <h2>About Me</h2>
+    <div id="navLink"><span style="color: #da1b61;">✽ </span><a href="/">Now</a></div>
+    <div id="navLink"><a href="/background">Background</a></div>
+    <h2>Work</h2>
+    <div id="navLink"><a href="/portfolio">Portfolio</a></div>
+    <div id="navLink">CV ( <a>Visual</a> / <a>Classic</a> )</div>
+</div>
+
+<div class="col left" id="pageContent">
+    <h1>Now</h1>
+    <p>Hi! My name is Keenan Jackson.  I use he/they pronouns. I build online courses and digital educational tools for clinical and trasnaltional researchers and research teams at Harvard Catalyst. My background as an interdisciplinary artist and arts educator gives me a unique perspective on building value with product teams. </p>
+    <p>I started building this website in 2025. Many pages are under construction. Please check back soon!</p>
+    <p>I live and work in Cumberland, Maryland, a valley micropolis in the Appalachian Mountains that catches passing clouds. I am lucky to share most days with my domestic partner Jacob, our dog Jack, and our cats Lola and Dom.&nbsp;</p>
+    <p>Get in touch with me by email:</p>
+    <p>KeeJac [at] pm [dot] me</p>
+    <p>&nbsp;</p>
+</div>
+</body>
+</html>
