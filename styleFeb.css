@@ -124,6 +124,10 @@ body {
   text-shadow: 10px  0 0 #5e4b8b;
 }
 
+.TooBig {
+  font-size: 8vw;
+}
+
 .Award {
   border: solid 2px black;
   border-radius: 75px;
@@ -226,6 +230,11 @@ body {
   .MHead {
   font-size: 16vw;
   }
+  
+  .TooBig {
+    font-size: 14vw;
+  }
+  
 }
  
 
@@ -238,6 +247,10 @@ body {
   
   .MHead {
   font-size: 30vw;
+  }
+    
+  .TooBig {
+    font-size: 12vw;
   }
   
    .EdBox {
