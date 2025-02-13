@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keenan Jackson's Professional Website and Portfolio</title>
+    <link rel="stylesheet" href="styleb.css">
+</head>
+<body>
+
+<div class="Top">
+  <div class="TopShell">
+  <h1 id="siteTitle">Keenan Jackson</h1>
+  <div class="topnav" id="myTopnav">
+  <a href="/index">Now</a>
+  <a href="/background">Background</a>
+  <a href="/portfolio">Portfolio</a>
+  <a href="/CV" class="active">CV</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+</div>
+
+<div class="Bio">
+<div class="Box">
+  
+  <div class="Circ"><img src="/KJ_Color2.png" alt="Portrait of Keenan Jackson." class="portrait"></div>
+  <h1>Keenan Jackson <a href="https://pronouns.org/what-and-why" style="font-weight: 300;" target="_blank">(he/they)</a></h1>
+  <p>Crafting digital products for 21st century learners.<br>Let's build something together!</p><a href="mailto:keenan.edu@proton.me">✉ keenan.edu@proton.me</a></div></div>
+
+<div class="Main">
+  <h1 class="MHead">CV</h1>
+<div class="Box"> <h2>Professional Summary</h2>
+                                      <p>Award-winning Harvard product manager specializing in learning and development service delivery, 10 years of experience developing educational products, services, and systems across K-12, higher ed, and clinical research workforce, 7 years of classroom teaching experience, and background in interactive media and design. Passionate about creating human-centered digital learning solutions for a better world. </p>
+</div>
+     <div class="Box">
+     <h2>Relevant Skills</h2>
+     <ul><li>Demonstrated experience product managing, defining product roadmaps with leadership, leading multiple product teams in Agile product development, and effectively managing stakeholder relationships.</li><li>Well-versed in educational technology with familiarity of educational technology products and industry landscape, especially in public health and medicine.</li><li>Practiced data collection and analysis, skillfully designing survey materials, operationalizing data collection, and synthesizing findings for data-driven decisions, effective storytelling, and product vision.</li><li>Experienced at updating legacy products for contemporary and future users to re-capture value of existing product assets.</li></ul>
+                        </div>
+                                     <div class="Box">
+                                      <h2>Work Experience</h2>
+                                      <h3>Harvard Catalyst<span style="font-weight:300;">, Boston, MA&nbsp;</span></h3>
+<h4>Senior Product Manager | 2024-Present&nbsp;</h4>
+<p>Established and led the product design practice, developing and launching multiple digital learning products. </p>
+ <ul>
+   <li>Led multiple cross-functional teams and managed complex stakeholder relations, fostering a collaborative culture that encouraged open communication, integrated stakeholder insights, and leveraged team members’ unique skills and passion areas to drive development activity and improve overall product quality. </li>
+<li>Designed and implemented new (on-demand) modality for digital learning products, engaging qualitative and quantitative UX research methods to inform feature prioritization and user interface design, achieving a significant 133% increase in experience completion.</li>
+<li>Managed the entire product lifecycle for 7 digital learning products, conducting user research, competitive analysis, go-to-market strategizing, prototype development, through to launch.</li></ul>
+                                      <h4>Project Lead and eLearning Designer | 2022-2024</h4>
+                                      <p>Led development and delivery of multiple digital courses.</p>
+<ul><li>Led multiple course teams - including contracted Harvard faculty, researchers, and community practitioners - in the design, operation, and iterative improvement of digital courses using Agile methods. </li>
+  <li>Collaborated with Harvard faculty and clinical investigators on curricular design for multiple digital courses using evidence-based pedagogic models and frameworks including Understanding by Design, Bloom's Taxonomy, and Fink's Significant Learning Outcomes.</li>
+<li>Collected and analyzed user data, presenting key metrics to faculty committees, leadership, and stakeholders, and using findings to steer product strategy.</li>
+</ul>
+<h3>MobyMax<span style="font-weight:300;">, Philadelphia, PA&nbsp;</span></h3>                                     <h4>Curriculum Developer | 2017-2021</h4><ul><li>Authored and edited K-8 math and algebra instructional and assessment content, including interactive digital media, video, and text, aligned with state and national standards.</li><li>Structured K-8 math curriculum for adaptive learning paths, leveraging user data to differentiate instruction.</li><li>Supervised and trained in-house curriculum developers in our operational workflow, including teaching foundational graphic design and front-end development skills.</li><li>Innovated, tested, and operationalized UI for complex interactives, designing and developing wireframes, and implementing with product team.</li></ul>
+
+                                       <h4>Math Design Lead</h4>
+<ul><li>Designed and implemented overall design practice for math content, integrating with company branding and defining org-wide visual style-guide.</li><li>Operated a team of designers, supervising development and use of graphic assets.</li><li>Led visual projects, providing art direction and creating key assets across multiple teams.</li></ul>
+<h3>Antionette Westphal School of Media Art and Design at Drexel University<span style="font-weight: 300;">, Philadelphia, PA</span></h3><h4>Adjunct Professor  |  2019-2021</h4><ul><li>Developed and delivered studio design curriculum in the Bauhaus tradition for in-person, hybrid, and remote learning.</li><li>Connected highly specialized technical and academic topics to broader social themes to make subjects compelling and relevant in contemporary contexts.</li><li>Introduced project management skills and productivity practices such to support the development of foundational habits of commitment to oneself, peers, and community, and to foreground responsibilities bound up with design.</li><li>Updated department-wide curriculum for hybrid and remote delivery at the onset of the covid pandemic, designing, developing, and supporting implementation of new materials across multiple classes outside my own.</li><li>Developed and implemented public-facing digital venues for student work on social media.</li></ul>
+
+                                    </div>
+                                    <div class="Box" id="Education">
+                                      <h2>Education</h2>
+                                     <div class="EdBoxA"> <div class="EdImg"><img src="https://codingbootcamps.io/wp-content/uploads/Penn-logo-min-1200x1364.png"></div>
+                                      <div class="EdText"><h3>MFA<span style="font-weight: 300;">, Interactive and Time-Based Media</span></h3><p>University of Pennsylvania&nbsp;<br>Philadelphia, PA</p></div></div>
+                                     <div class="EdBoxA"> <div class="EdImg"> <img src="https://wp.stolaf.edu/about/files/2023/06/STO-Shield@2x-300x300.png"></div><div class="EdText"><h3>BA<span style="font-weight: 300;">, Studio Art</span></h3><p>Saint Olaf College&nbsp;<br>Northfield, MN</p></div></div>
+                                    </div>
+                                    <div class="Box" id="Awards">
+                                      <h2>Awards</h2>
+                                    <div class="EdBox"> <div class="Award"><img src=https://www.mobymax.com/MM/img/public/mobymax/awards/CODIE_2022_winner_black.png class="Codie"></div> <div class="EdText"><h3>SIIA CODiE</h3><p>Best STEM Instructional Solution for Grades PK-8 | 2022</p>
+                                      <p>Best Student Learning Capacity-Building Solution | 2022</p>
+                                      <p>Best Mathematics Instructional Solution for Grades PK-8 | 2020</p></div></div>
+                                      <hr>
+                                      <div class="EdBox"> <div class="Award"><img src="https://www.mobymax.com/MM/img/public/mobymax/awards/EdTechDigest_CoolTool-WINNER-2022.png" class="EdTechAward"></div><div class="EdText"><h3>The EdTech Awards Cool Tool Winner</h3><p>
+                                      Adaptive Technology Solution | 2022</p><p>E-learning, Blended, or Flipped Solution | 2021</p><p>EdTech Product or Service Setting a Trend | 2021</p><br><br></div></div>
+                                      <div class="EdBox"><div class="Award"><img src="https://www.mobymax.com/MM/img/public/mobymax/awards/T_L-2022.png" class="TechLearning"></div><div class="EdText"><h3>Tech&Learning</h3><p>Best Tools for Back to School | 2022</p><p>Award of Excellence: Primary (K-6) Back to School | 2021</p><p>Award of Excellence: Software, Assessment Solution | 2020</p><p>Award of Excellence: Software, Math | 2020</p></div></div>
+                                      
+                                     <div class="EdBox"><div class="Award"> <img src="https://www.mobymax.com/MM/img/public/mobymax/awards/Seal-Winner-Early-Childhood-App.jpg" class="Edvocate"></div><div class="EdText"> <h3>The Tech Edvocate Awards Winner</h3><p>Best Early Childhood Education App or Tool | 2022</p></div></div><div class="EdBox"><div class="Award"><img src="https://www.mobymax.com/MM/img/public/mobymax/awards/EdTech%20Breakthrough%202022-MobyMax.png" class="EdBreak"></div><div class="EdText"><h3>EdTech Breakthrough Award</h3><p>Enhanced Curriculum Solution Provider of the Year | 2020
+                                      </p></div></div>
+                                    </div>
+
+                                 
+
+                                    </div>
+                                   
+
+
+</body>
+</html>
