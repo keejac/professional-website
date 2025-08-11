@@ -4,42 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keenan Jackson's Professional Website and Portfolio</title>
-    <link rel="stylesheet" href="styleFeb2.css">
+    <link rel="stylesheet" href="style_8_25.css">
 </head>
 <body>
-<div class="Top">
-  <div class="TopShell">
-  <h1 id="siteTitle">Keenan Jackson</h1>
-  <div class="topnav" id="myTopnav">
-  <a href="/index">Now</a>
-  <a href="/background">Background</a>
-  <a href="/portfolio"  class="active">Portfolio</a>
-  <a href="/CV">CV</a>
+<!-- navigation -->
 
+<div class="navBar" id="KJBar"><a class="navLink logo" href="/index"><img src="https://keejac.com/Assets/KJ_logo_brown.png" alt="Logo of letters K and J."></a>
+  <a class="navLink" id="navLink" href="/index">About</a>
+  <a class="navLink active" href="/portfolio">Portfolio</a>
+  <a class="navLink" href="/CV">CV</a>
+  <a href="javascript:void(0);" class="hideBig" onclick="myFunction()">
+    <i class="fa fa-navicon"></i>
   </a>
 </div>
-</div>
-</div>
 
-<div class="Bio">
-<div class="Box">
-  
-  <div class="Circ"><img src="Assets/KJ_Color2.png" alt="Portrait of Keenan Jackson." class="portrait"></div>
-  <h1>Keenan Jackson <a href="https://pronouns.org/what-and-why" style="font-weight: 300;" target="_blank">(he/they)</a></h1>
-  <p>Hey there!</p><a href="mailto:keenan.edu@proton.me">✉ keenan.edu@proton.me</a></div></div>
-
-<div class="Main">
-  <h1 class="MHead TooBig">Portfolio</h1>
-  <div class="Box">
-    <h2>Working on it!</h2>
-    <p>Check back soon for updates </p>
-    
+<!-- flex body content -->
+<!-- contact card -->
+<div class="container">
+  <div class="bio-card">
+    <div class="Circ"><img src="https://keejac.com/Assets/KeenanJackson.jpg" alt="Portrait of Keenan Jackson." class="portrait"></div>
+    <h1>Keenan Jackson <a href="https://pronouns.org/what-and-why" style="font-weight: 300;" target="_blank">(he/they)</a></h1>
+    <p>Hey there!</p><a href="mailto:keenan.edu@proton.me">✉ keenan.edu@proton.me</a>
   </div>
 
-                                 
+  <!-- Body ody ody-->
+  <div class="body-col">
 
-                                    </div>
-                                   
+    <div class="body-card imgFill">
+      <div class="Title">
+        <h2>Techniques to Writing a Competitive Grant</h2>
+        <h3>On-Demand Course at Harvard Catalyst</h3>
+      </div>
+      <img src="https://keejac.com/Assets/Techniques.jpg" alt="Digital artwork of orange typewriter with pages flying out to the left." class="">
+      <h3>Product Summary</h3>
+      <p>This course teaches participants foundational techniques to writing a competitive grant proposal for clinical and translational research projects agnostic of funding body. The course seeds other funding courses that discuss aspects of working with the NIH, non-NIH government agencies, industry, and foundations and philanthropies. </p>
+      <h3>My Impact</h3>
+      <ul>
+        <li>Shipped product in 2024</li>
+        <li>Improved user retention by 280+% over similar, previously offered version of course</li>
+      </ul>
+      <h3>Links</h3> <a href="https://ondemand.catalyst.harvard.edu/products/Techniques-to-Writing-a-Competitive-Grant" target="_blank" rel="noopener"><i>Techniques to Writing a Competitive Grant</i> Enrollment</a>
+    </div>
 
+    <div class="body-card imgFill">
+      <div class="Title">
+        <h2>Genomic Medicine in Clinical Practice</h2>
+        <h3>On-Demand Course at Harvard Catalyst</h3>
+      </div>
+      <img src="https://keejac.com/Assets/Genomics.jpg" alt="Digital artwork of three DNA strands." class="">
+      <h3>Product Summary</h3>
+      <p>This course explores the role of genomic medicine in clinical care, providing health care providers with a technical foundation and recommending practical opportunities for integrating genetic testing in clinical work with patients and research participants. </p>
+      <h3>My Impact</h3>
+      <ul>
+        <li>Shipped product as a cohort-bound offering in 2022 and 2023</li>
+        <li>Shipped on-demand format in 2024</li>
+        <li>Piloted modular design that allows learners to enroll in sections instead of whole course</li>
+        <li>Rated highest learner satisfaction among online offerings in 2024 (1.4 standard deviations above average)</li>
+      </ul>
+      <h3>Links</h3> <a href="https://ondemand.catalyst.harvard.edu/products/genomics" target="_blank" rel="noopener"><i>Genomic Medicine in Clinical Practice</i> Enrollment</a>
+    </div>
+  </div>
+</div>
+    <script>
+        // navigation collapses on small screens
+function myFunction() {
+  var x = document.getElementById("KJBar");
+  if (x.className === "navBar") {
+    x.className += " go";
+  } else {
+    x.className = "navBar";
+  }
+}
+
+// navigation shrinks on scroll
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("KJBar").style.padding = "0px 8px"; 
+     document.getElementById("KJBar").style.background = "rgb(247, 246, 246)";
+    
+   
+  } else {
+    document.getElementById("KJBar").style.padding = "5px 8px";
+         document.getElementById("KJBar").style.background = "rgb(247, 246, 246, 0.0)";
+  }
+}
+    </script>
 </body>
 </html>
