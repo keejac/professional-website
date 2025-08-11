@@ -4,6 +4,10 @@ background-size: cover;
   overflow-x: hidden;
 }
 
+.navBar {
+  z-index: 4;
+}
+
 /* flex body style */
 
   .container {
@@ -29,7 +33,7 @@ background-size: cover;
 
 .body-col {
   order: 0;
-  z-index: -2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
@@ -162,7 +166,7 @@ li {
   
   .body-col, .bio-card {
   flex: none;
-    z-index: -2;
+    z-index: 1;
 }
   
   
