@@ -149,6 +149,37 @@ li {
   gap: 0.75rem;
 }
 
+/* Portfolio special */
+.port-img {
+  margin-top: 1.25rem;
+  border-radius: 0;
+}
+
+.port-img img {
+  border-radius: 0.5rem;
+  width: 10rem;
+   transform: translateX(0);
+}
+
+@media (max-width:700px) {
+  .card-box {
+  flex-direction: column;
+  align-items: stretch;
+  }
+  
+  .port-img img {
+  border-radius: 0.5rem;
+    width: 100%;}
+  
+ .body-card-header {
+  padding: 0.25rem 1rem;
+  max-width: 110%;
+   margin-left: -2.5rem;
+}
+}
+
+/* port import end */
+
 .card-box-img {
   margin-top: 1.25rem;
   border-radius: 0;
@@ -218,14 +249,14 @@ li {
   }
   
    .bio-card img {
-  width: 100px;
+  width: 125px;
   height: auto;
-  border-radius: 6rem;
-  margin-top: 0.25rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
     margin-bottom: 0.25;
   display: block;
   margin-right: 1rem;
-  margin-left: 0;
+  margin-left: -2.5rem;
   float: left;
 }
 }
@@ -295,14 +326,25 @@ a.hideBig {
 
 
 
+/* Port update 9/9/25 */
+
 @media screen and (max-width: 700px) {
-  .navBar a:not(:first-child) {display: none;}
+  .navBar a:not(:first-child):not(a.active) {
+    display: none;
+  }
+  
+  a.active {
+    margin: 0;
+    padding: 21px 0;
+    float: center;
+  }
+  
   .navBar a.hideBig {
     float: right;
     display: block;
- 
   }
   }
+/* Update end */
 
   @media screen and (max-width: 700px) {
     .navBar.go {position: sticky;}
