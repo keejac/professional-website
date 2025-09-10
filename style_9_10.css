@@ -124,6 +124,16 @@ li {
   gap: 0.75rem;
 }
 
+.card-box-img {
+  margin-top: 1.25rem;
+  border-radius: 0;
+}
+
+.card-box-img img {
+  border-radius: 0;
+  width: 3rem;
+}
+
 /* Portfolio special */
 .port-img {
   margin-top: 1.25rem;
