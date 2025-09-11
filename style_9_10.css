@@ -46,7 +46,6 @@ background-size: cover;
 
 
 .body-card-header {
-  position: block;
   padding: 0.25rem 1rem;
   margin-top: -2rem;
   margin-left: auto;
@@ -232,7 +231,7 @@ li {
   height: auto;
   border-radius: 1rem;
   margin-top: -2rem;
-    margin-bottom: 0.25;
+    margin-bottom: 0;
   display: block;
   margin-right: 1rem;
   margin-left: -2.5rem;
