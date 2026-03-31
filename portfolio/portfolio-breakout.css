@@ -112,4 +112,9 @@ p.center {
    transform: translateX(0);
 }
 
+img.port-img-fill {
+  width: 100%; 
+  transform: translateX(0);
+}
+
 /* Img and P tweaks end */
