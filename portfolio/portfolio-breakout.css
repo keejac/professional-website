@@ -86,3 +86,30 @@
 }
 
 /* Next/Back Buttons End */
+
+/* Img and P tweaks */
+
+img.center {
+   transform: translateX(0);
+}
+
+img.port-splash {
+  width: 100%;
+}
+
+p.center {
+  text-align: center;
+}
+
+.port-img {
+  margin-top: 1.25rem;
+  border-radius: 0;
+}
+
+.port-img img {
+  border-radius: 0.5rem;
+  width: 10rem;
+   transform: translateX(0);
+}
+
+/* Img and P tweaks end */
