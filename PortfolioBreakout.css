@@ -1,0 +1,88 @@
+/* Course Card */
+
+.course-card h5 {
+  font-size: 1.2em;
+}
+
+.course-card, .course-card-alt {
+  margin: 0 -2.25rem 1rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  border: solid 2px #86807D;
+  z-index: 5;
+}
+.course-card {
+  background-color: #EDE5DF;
+}
+.course-card-alt
+{
+  background-color: #DFF5F6;
+}
+
+/* Course Card End */
+
+/* Next/Back Buttons */
+
+.next-buttons {
+  z-index: 6;
+}
+
+.phone-next, .phone-back, .web-next, .web-back {
+  background-color: #525766;
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.phone-next, .phone-back {
+  display: none;
+}
+
+.phone-next {
+  position: fixed;
+  bottom: 0.5rem;
+  right: -2rem;
+  padding: 1rem 3rem 1rem 1rem;
+}
+
+.phone-back {
+    position: fixed;
+  bottom: 0.5rem;
+  left: -2rem;
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+.web-next, .web-back {
+  display: block;
+  position: fixed;
+  top: 10rem;
+  padding: 0.25rem 0.75rem;
+  transition: scale 0.25s, background-color 0.5s;
+}
+
+.web-next:hover, .web-back:hover {
+  scale: 1.1;
+  background-color: darkred;
+  cursor: pointer;
+}
+
+.web-next {
+  right: 36.8%;
+}
+
+.web-back {
+  left: 0.5%;
+}
+
+@media screen and (max-width: 900px) {
+.web-next, .web-back {
+  display: none;
+}
+  
+  .phone-next, .phone-back {
+  display: block;
+    z-index: 6;
+}
+}
+
+/* Next/Back Buttons End */
