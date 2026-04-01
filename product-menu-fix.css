@@ -20,11 +20,11 @@
 .product-link h1 {
   text-align: left;
   padding: 0 2.5rem 0 1.5rem;
-  font-size: 2vw;
+  font-size: 32px;
 }
 
 .product-link-alt h1 {
-padding: 0 1.5rem 0 3rem;
+padding: 0 1.5rem 0 2.5rem;
   text-align: right;
 }
 
