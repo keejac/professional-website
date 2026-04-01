@@ -1,0 +1,7 @@
+  .web-port-menu {
+  display: none;
+}
+  
+  .phone-port-menu {
+    display: block;
+  }
