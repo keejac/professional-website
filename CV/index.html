@@ -1,131 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keenan Jackson's Professional Website and Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style_9_10.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV – Keenan Jackson</title>
+<meta name="description" content="CV of Keenan Jackson, digital learning product manager: currently a learning designer at Harvard Medical School IT, formerly senior product manager at Harvard Catalyst and principal designer at MobyMax.">
+<meta property="og:title" content="CV – Keenan Jackson">
+<meta property="og:description" content="CV of Keenan Jackson, digital learning product manager: currently a learning designer at Harvard Medical School IT, formerly senior product manager at Harvard Catalyst and principal designer at MobyMax.">
+<meta property="og:image" content="https://keejac.com/Assets/og-image.jpg">
+<link rel="canonical" href="https://keejac.com/CV/">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/site.css?v=20261105">
+<script src="/js/site.js?v=20261105" defer></script>
 </head>
 <body>
-<!-- navigation -->
-
-<div class="navBar" id="KJBar"><a class="navLink logo" href="/index"><img src="https://keejac.com/Assets/KJ_logo_brown.png" alt="Logo of letters K and J."></a>
-  <a class="navLink" id="navLink" href="/index">About</a>
-  <a class="navLink" href="/portfolio">Portfolio</a>
-  <a class="navLink active" href="/CV">CV</a>
-  <a href="javascript:void(0);" class="hideBig" onclick="myFunction()">
-    <i class="fa fa-navicon"></i>
-  </a>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- ===== HEADER: same on every page ===== -->
+<header class="site-header"><nav class="nav" aria-label="Main">
+  <a class="nav-home" href="/"><img src="/Assets/KJ_logo_brown.png" width="128" height="102" alt="Keenan Jackson, home"></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list"><svg width="22" height="18" viewBox="0 0 22 18" aria-hidden="true"><path d="M0 1h22M0 9h22M0 17h22" stroke="currentColor" stroke-width="2.5"/></svg><span class="sr-only">Menu</span></button>
+  <ul class="nav-list" id="nav-list">
+    <li><a href="/">About</a></li>
+    <li><a href="/portfolio/">Portfolio</a></li>
+    <li><a href="/CV/" aria-current="page">CV</a></li>
+  </ul>
+</nav></header>
+<div class="layout">
+<!-- ===== BIO CARD: same on every page ===== -->
+<aside class="bio bio--compact" aria-label="About Keenan Jackson">
+  <img src="/Assets/KeenanJackson.jpg" width="600" height="600" alt="Portrait of Keenan Jackson, a smiling bald man with pink glasses.">
+  <p class="bio-name">Keenan Jackson <a href="https://pronouns.org/what-and-why" target="_blank" rel="noopener">(he/they)<span class="sr-only">, about pronouns, opens in new tab</span></a></p>
+  <p class="bio-role">Digital learning product manager<br>Learning designer at Harvard Medical School IT</p>
+  <p class="bio-intro">Let’s connect if you’re building learning products that need clarity, structure, or a fresh perspective.</p>
+  <ul class="bio-links">
+    <li><a href="mailto:keenan.edu@proton.me">keenan.edu@proton.me</a></li>
+    <li><a href="/CV/Keenan-Jackson-CV.pdf">Download CV (PDF)</a></li>
+    <!-- LINKEDIN: <li><a href="https://www.linkedin.com/in/YOUR-HANDLE/">LinkedIn</a></li> -->
+  </ul>
+</aside>
+<!-- ===== PAGE CONTENT ===== -->
+<main id="main">
+  <div class="page-head">
+    <h1>CV</h1>
+  </div>
+  <section class="card">
+    <h2>Summary</h2>
+    <p>Digital learning product manager who leads cross-functional teams to build, launch, and operate learning products at institutional scale across higher education, healthcare, and K–12. Experienced across the full product lifecycle and practiced at working with faculty, clinical investigators, compliance offices, and senior leadership. Builds products that are structurally clear, accessible by design, effortless to use, and measured on outcomes.</p>
+  </section>
+  <section class="card">
+    <h2>Highlights</h2>
+    <ul>
+      <li>Delivered 133% to 280% increases in learner retention with a new on-demand learning modality.</li>
+      <li>Managed the full lifecycle of 25+ digital learning products; built 7 from 0 to 1.</li>
+      <li>Delivered 11,500+ CME credit hours, maintaining NIH funding.</li>
+      <li>Built the required HMS AI Tools course, which reached 2,157 learners in its first three months and is being adapted by the Harvard School of Dental Medicine.</li>
+      <li>Built design systems and curriculum contributing to a 5x increase in product sales at MobyMax.</li>
+    </ul>
+  </section>
+  <section class="card" id="work">
+    <h2>Work experience</h2>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/HMS.png" loading="lazy" alt="Harvard Medical School logo"><div><h3>Harvard Medical School</h3><p>Boston, MA · 2022–present</p></div></div>
+      <h4>Learning Designer, HMS IT <span>· 2026–present</span></h4>
+      <p class="lead">Lead the IT learning portfolio, helping people across HMS build the skills and confidence to navigate the School’s technological landscape.</p>
+      <ul>
+        <li>Reached 2,157 learners in three months with the required HMS AI Tools course, built end to end; resolved in 9 days the provisioning defect that blocked access on completion.</li>
+        <li>Analyzed HMS IT skill gaps against the ~13,000-course Harvard Training Portal catalog and prototyped a facilitator model with its team.</li>
+        <li>Helped build the HMS AI Community of Practice from charter to an operating program with 3 branches, quarterly meetups, office hours, and workshops.</li>
+        <li>Designed training on the new HMS IT purchase order process for 30 requesters and executive leaders, using UbD, Bloom, and Gagné; testing the form before launch surfaced a validation defect.</li>
+        <li>Launched content moderation training for HMS web editors after Jira discovery, editor interviews, and 2 review rounds with 5 reviewers.</li>
+        <li>Published 2 knowledge articles for the passwordless login transition, plus an access guide and workflow map for off-Quad AI Sandbox users.</li>
+        <li>Established accessibility practice with Siteimprove on the flagship site, 4 tagged accessible PDFs, and a documentation standard toward WCAG 2.2 AA.</li>
+      </ul>
+      <h4>Senior Product Manager of Digital Learning, Harvard Catalyst <span>· 2024–2025</span></h4>
+      <p class="lead">Established and led the product design practice, developing and launching multiple digital learning products.</p>
+      <ul>
+        <li>Delivered 133% to 280% increases in learner retention by designing a new on-demand modality, using qualitative and quantitative UX research to set feature priorities and interface design.</li>
+        <li>Managed 25+ online learning products for clinical research education, covering operation, participant data analysis, and incremental improvement.</li>
+        <li>Built 7 products from 0 to 1, from needs assessment and learning goals defined with faculty through assessments, job aids, data collection, an improvement cadence, and sunsetting criteria.</li>
+        <li>Delivered 11,500+ CME credit hours, maintaining NIH funding.</li>
+        <li>Led cross-functional teams of media producers, web and IT specialists, coordinators, faculty directors, SMEs, and senior leadership, fostering a collaborative culture that drew on each member’s skills and passion areas.</li>
+        <li>Executed data-driven go-to-market strategy with Communications and Salesforce administrators; co-managed LMS operation, role management, and vendor integrations.</li>
+      </ul>
+      <h4>Project Lead and E-Learning Designer, Harvard Catalyst <span>· 2022–2024</span></h4>
+      <p class="lead">Led development and delivery of multiple digital courses.</p>
+      <ul>
+        <li>Led course teams of contracted Harvard faculty, researchers, and community practitioners in the design, operation, and iterative improvement of digital courses using Agile methods.</li>
+        <li>Documented product requirements and aligned course goals, objectives, assessments, and content, guiding faculty in evidence-based frameworks including Understanding by Design, Bloom’s Taxonomy, and Fink’s Significant Learning Outcomes.</li>
+        <li>Collected and analyzed learner data, presenting key metrics to faculty committees, leadership, and stakeholders, and using findings to steer product strategy.</li>
+        <li>Maintained ACCME accreditation and managed competing projects, external SMEs, and vendors against timelines, risk registers, and budgets.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/Moby.png" loading="lazy" alt="MobyMax logo"><div><h3>MobyMax</h3><p>Remote · 2017–2021</p></div></div>
+      <h4>Principal Designer <span>· 2018–2021</span></h4>
+      <p class="lead">Led visual design strategy for math content across the organization.</p>
+      <ul>
+        <li>Built design systems and curriculum contributing to a 5x increase in product sales.</li>
+        <li>Operated and mentored a team of 12 curriculum developers in animation, layout, and multimedia, fostering a high-performing, collaborative design culture.</li>
+        <li>Established and scaled a company-wide design practice for math content, building design systems and a visual style guide aligned with brand and product goals.</li>
+        <li>Designed UI for interactive modules and ran user testing to improve usability.</li>
+      </ul>
+      <h4>Curriculum Developer <span>· 2017–2021</span></h4>
+      <ul>
+        <li>Authored, edited, and quality-assured K–8 math and algebra instructional and assessment content, including interactive media, video, and text, aligned with state and national standards.</li>
+        <li>Structured K–8 math curriculum for adaptive learning paths, using assessment interactives and learner data to route students to personalized paths.</li>
+        <li>Supervised and trained in-house curriculum developers in the operational workflow, including foundational graphic design and front-end development skills.</li>
+        <li>Designed, tested, and put into production UI for complex interactives, designing wireframes and implementing them with the product team.</li>
+      </ul>
+    </article>
+  </section>
+  <section class="card" id="teaching">
+    <h2>Teaching experience</h2>
+    <article class="job">
+      <div class="job-head"><span class="monogram" aria-hidden="true">PCA&amp;D</span><div><h3>Pennsylvania College of Art and Design</h3><p>Lancaster, PA · 2022–2023</p></div></div>
+      <h4>Adjunct Professor <span>· 2022–2023</span></h4>
+      <p class="lead">Taught 3D Design, a fully remote foundations course commissioned by PCA&amp;D, to mostly first-year students in sections of about 10.</p>
+      <ul>
+        <li>Designed a digital-first studio curriculum drawing on Bauhaus exercises and frameworks, working in paper, illustration board, wood, glue, and tape.</li>
+        <li>Built project management, collaboration, and reflection on historic and contemporary artists and designers into every project.</li>
+        <li>Guided students to rigorous critiques, well-crafted designs with complex visual strategies, and artist statements linking course work to their wider practice.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/Drexel.png" loading="lazy" alt="Drexel University logo"><div><h3>Antoinette Westphal College of Media Arts and Design <span>at Drexel University</span></h3><p>Philadelphia, PA · 2019–2021</p></div></div>
+      <h4>Adjunct Professor <span>· 2019–2021</span></h4>
+      <p class="lead">Taught Black and White Design, Color Theory, and 3D Design to mostly first-year students in sections of about 16, plus one graduate section.</p>
+      <ul>
+        <li>Developed and delivered 2D and 3D studio curriculum in the Bauhaus tradition for in-person, hybrid, and remote learning, in media from ink and collage to MDF and acrylic.</li>
+        <li>Advanced the department’s use of digital fabrication, including the fab lab’s CNC router and laser cutter.</li>
+        <li>Led the department’s move to remote delivery at the onset of COVID-19 and launched a digital venue for student work when in-person shows were suspended.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/Kutztown.png" loading="lazy" alt="Kutztown University logo"><div><h3>Kutztown University of Pennsylvania</h3><p>Kutztown, PA · 2016</p></div></div>
+      <h4>Adjunct Professor <span>· 2016</span></h4>
+      <p class="lead">Taught two sections of Introduction to Sculpture (about 16 students each, mostly first-year), a combined Sculpture I–III section of about 8 seniors, and two independent studies.</p>
+      <ul>
+        <li>Ran the wood- and metal-working studio spaces for all sculpture courses.</li>
+        <li>Led students to develop artistic identities through 3D materials and methods, frequent critiques, and self-directed final projects tied to contemporary art.</li>
+        <li>Students produced more idiosyncratic, ambitious work than they anticipated and showed real joy in sculptural practice.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/Penn.png" loading="lazy" alt="University of Pennsylvania logo"><div><h3>University of Pennsylvania</h3><p>Philadelphia, PA · 2016</p></div></div>
+      <h4>Adjunct Professor <span>· 2016</span></h4>
+      <p class="lead">Taught Introduction to Drawing to undergraduates and adult learners.</p>
+      <ul>
+        <li>Designed the course around observation and mark-making exercises in pencil and charcoal, paired with study of historic and contemporary artists.</li>
+        <li>Students applied inventive mark-making to large-scale final projects.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/ICA.png" loading="lazy" alt="Institute of Contemporary Art logo"><div><h3>Institute of Contemporary Art</h3><p>Philadelphia, PA · 2015</p></div></div>
+      <h4>Graduate Lecturer <span>· 2015</span></h4>
+      <ul>
+        <li>Designed and delivered public lectures tied to current exhibitions.</li>
+        <li>Led public programs to engage exhibition visitors.</li>
+      </ul>
+    </article>
+    <p class="lead"><strong>Guest lectures:</strong> University of the Arts (2014); Tyler School of Art and Architecture, Temple University (2017, 2020–21). I spoke about my art practice and research, including commercial dyes in soak-and-stain processes and George Cecil Ives and queer liberation in the UK. The talks led to repeat invitations and an artist residency in the Queer Materials Lab.</p>
+  </section>
+  <section class="card" id="education">
+    <h2>Education</h2>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/Penn.png" loading="lazy" alt="University of Pennsylvania logo"><div><h3>MFA <span>Interactive and Time-Based Media</span></h3><p>University of Pennsylvania, Philadelphia, PA · 2016</p></div></div>
+    </article>
+    <article class="job">
+      <div class="job-head"><img width="192" height="192" src="/Assets/StOlaf.png" loading="lazy" alt="St. Olaf College logo"><div><h3>BA <span>Studio Art, focus in Education</span></h3><p>St. Olaf College, Northfield, MN · 2011</p></div></div>
+    </article>
+  </section>
+  <section class="card" id="awards">
+    <h2>Awards</h2>
+    <div class="award"><img width="256" height="256" src="/Assets/CODiE.png" loading="lazy" alt="SIIA CODiE award badge"> <div><h3>SIIA CODiE</h3> <ul> <li>Best STEM Instructional Solution for Grades PK–8 <span>· 2022</span></li> <li>Best Student Learning Capacity-Building Solution <span>· 2022</span></li> <li>Best Mathematics Instructional Solution for Grades PK–8 <span>· 2020</span></li> </ul> </div></div>
+    <div class="award"><img width="256" height="256" src="/Assets/EdTechAwards.png" loading="lazy" alt="The EdTech Awards badge"> <div><h3>The EdTech Awards Cool Tool Winner</h3> <ul> <li>Adaptive Technology Solution <span>· 2022</span></li> <li>E-Learning, Blended, or Flipped Solution <span>· 2021</span></li> <li>EdTech Product or Service Setting a Trend <span>· 2021</span></li> </ul> </div></div>
+    <div class="award"><img width="256" height="256" src="/Assets/Tech-and-Learning.png" loading="lazy" alt="Tech &amp; Learning award badge"> <div><h3>Tech &amp; Learning</h3> <ul> <li>Best Tools for Back to School <span>· 2022</span></li> <li>Award of Excellence: Primary (K–6) Back to School <span>· 2021</span></li> <li>Award of Excellence: Software, Assessment Solution <span>· 2020</span></li> <li>Award of Excellence: Software, Math <span>· 2020</span></li> </ul> </div></div>
+    <div class="award"><img width="256" height="256" src="/Assets/Edvocate.png" loading="lazy" alt="The Tech Edvocate Awards badge"> <div><h3>The Tech Edvocate Awards Winner</h3> <ul> <li>Best Early Childhood Education App or Tool <span>· 2022</span></li> </ul> </div></div>
+    <div class="award"><img width="256" height="256" src="/Assets/EdTech_Breakthrough.png" loading="lazy" alt="EdTech Breakthrough award badge"> <div><h3>EdTech Breakthrough</h3> <ul> <li>Enhanced Curriculum Solution Provider of the Year <span>· 2020</span></li> </ul> </div></div>
+  </section>
+  <section class="card" id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Areas of expertise</dt>
+      <dd>Product lifecycle and roadmapping; discovery, requirements, and needs assessment; cross-functional team leadership; stakeholder and SME engagement; data-driven iteration and measurement; user journey mapping and UX research; go-to-market and adoption strategy; digital accessibility (WCAG 2.2 AA)</dd>
+      <dt>Product and delivery</dt>
+      <dd>Roadmapping, requirements documentation, Agile/Scrum, discovery and user research, analytics and reporting, go-to-market planning</dd>
+      <dt>Platforms</dt>
+      <dd>ServiceNow, Canvas, Blackboard, Brightspace/D2L, Moodle, Drupal, Confluence, Jira, Airtable, Salesforce, Lucid, Siteimprove</dd>
+      <dt>Design and media</dt>
+      <dd>Adobe Creative Cloud, Affinity Suite, Figma; video, motion graphics, animation, infographics, UI patterns</dd>
+      <dt>Accessibility and pedagogy</dt>
+      <dd>WCAG 2.2 AA, tagged PDF remediation, assistive-technology testing; Understanding by Design, Bloom’s Taxonomy, Fink’s Significant Learning Outcomes, Kern’s Medical Education Cycle</dd>
+    </dl>
+  </section>
+</main>
 </div>
-
-<!-- flex body content -->
-<!-- contact card -->
-<div class="container">
-      <div class="title-card"><h1>CV</h1></div>
-  <div class="bio-card"> <div class="Circ"><img src="Assets/KeenanJackson.jpg" alt="Portrait of Keenan Jackson, a smiling white bald middle-age man with pink glasses." class="portrait"></div>
-  <h1>Keenan Jackson <a href="https://pronouns.org/what-and-why" style="font-weight: 300;" target="_blank">(he/they)</a></h1>
-  <p>Let’s connect if you’re building learning experiences that need clarity, structure, or a fresh perspective.</p><a href="mailto:keenan.edu@proton.me">✉ keenan.edu@proton.me</a></div>
-
-  <!-- Body ody ody-->
-<div class="body-col">
-  <div class="body-card"> <div class="body-card-header"><h1>Professional Summary</h1></div>
-                                      <p>Experienced digital learning product manager and instructional designer who creates online, blended, and face to face learning for higher education, healthcare, and K–12. Skilled in human-centered learning product development, leading cross-functional teams, and prioritizing effectively to get stalled projects back on track and across the finish line. Passionate about understanding learner needs and building educational tools for a better world.</p>
-</div>
-     <div class="body-card">
-       <div class="body-card-header"> <h1>Relevant Skills</h1></div>
-     <ul><li>Demonstrated experience product managing, defining product roadmaps with leadership, leading multiple product teams in Agile product development, and effectively managing stakeholder relationships.</li><li>Well-versed in educational technology with familiarity of educational technology products and industry landscape, especially in public health and medicine.</li><li>Practiced data collection and analysis, skillfully designing survey materials, operationalizing data collection, and synthesizing findings for data-driven decisions, effective storytelling, and product vision.</li><li>Experienced at updating legacy products for contemporary and future users to re-capture value of existing product assets.</li></ul>
-                        </div>
-                                     <div class="body-card" id="Work">
-                                       <div class="body-card-header"><h1>Work Experience</h1></div>
-                                     <div class="card-box"><div class="card-box-img"><img src="Assets/HMS.png" alt="Harvard Medical School logo."></div> 
-                                       <div class="card-box-text"><h3>Harvard Catalyst<span style="font-weight:300;"> at Harvard Medical School</span></h3><p> Boston, MA&nbsp;</p>                                  </div></div> <h4>Senior Product Manager | 2024-2025&nbsp;</h4>
-<p>Established and led the product design practices, developing and launching multiple digital learning products. </p>
- <ul>
-   <li>Led multiple cross-functional teams and managed complex stakeholder relations, fostering a collaborative culture that encouraged open communication, integrated stakeholder insights, and leveraged team members’ unique skills and passion areas to drive development activity and improve overall product quality. </li>
-<li>Designed and implemented new (on-demand) modality for digital learning products, engaging qualitative and quantitative UX research methods to inform feature prioritization and user interface design, achieving a significant 133% increase in experience completion.</li>
-<li>Managed the entire product lifecycle for 7 digital learning products, conducting user research, competitive analysis, go-to-market strategizing, prototype development, through to launch.</li></ul>
-                                      <h4>Project Lead and eLearning Designer | 2022-2024</h4>
-                                      <p>Led development and delivery of multiple digital courses.</p>
-<ul><li>Led multiple course teams - including contracted Harvard faculty, researchers, and community practitioners - in the design, operation, and iterative improvement of digital courses using Agile methods. </li>
-  <li>Collaborated with Harvard faculty and clinical investigators on curricular design for multiple digital courses using evidence-based pedagogic models and frameworks including Understanding by Design, Bloom's Taxonomy, and Fink's Significant Learning Outcomes.</li>
-<li>Collected and analyzed user data, presenting key metrics to faculty committees, leadership, and stakeholders, and using findings to steer product strategy.</li>
-</ul>
-<div class="card-box"><div class="card-box-img"><img src="/Assets/Moby.png" alt="MobyMax logo."></div> 
-                                       <div class="card-box-text"><h3>MobyMax</h3> <p>Remote</p></div></div>                                     <h4>Curriculum Developer | 2017-2021</h4><ul><li>Authored and edited K-8 math and algebra instructional and assessment content, including interactive digital media, video, and text, aligned with state and national standards.</li><li>Structured K-8 math curriculum for adaptive learning paths, leveraging user data to differentiate instruction.</li><li>Supervised and trained in-house curriculum developers in our operational workflow, including teaching foundational graphic design and front-end development skills.</li><li>Innovated, tested, and operationalized UI for complex interactives, designing and developing wireframes, and implementing with product team.</li></ul>
-
-                                       <h4>Principal Designer | 2018-2021</h4>
-<ul><li>Established and scaled a company-wide design practice for math content, including the development of a visual style guide that aligned with brand and product goals.</li><li>Operated a team of designers, overseeing asset creation and fostering a high-performing, collaborative design culture.</li></ul>
-<div class="card-box"><div class="card-box-img"><img src="/Assets/Drexel.png" alt="Drexel University logo."></div> 
-                                       <div class="card-box-text"><h3>Antionette Westphal School of Media Art and Design<span style="font-weight: 300;"> at Drexel University</span></h3><p>Philadelphia, PA</p></div></div><h4>Adjunct Professor  |  2019-2021</h4><ul><li>Developed and delivered studio design curriculum in the Bauhaus tradition for in-person, hybrid, and remote learning.</li><li>Connected highly specialized technical and academic topics to broader social themes to make subjects compelling and relevant in contemporary contexts.</li><li>Introduced project management skills and productivity practices such to support the development of foundational habits of commitment to oneself, peers, and community, and to foreground responsibilities bound up with design.</li><li>Updated department-wide curriculum for hybrid and remote delivery at the onset of the covid pandemic, designing, developing, and supporting implementation of new materials across multiple classes outside my own.</li><li>Developed and implemented public-facing digital venues for student work on social media.</li></ul>
-
- 
-  <div class="card-box"><div class="card-box-img"><img src="/Assets/Kutztown.png" alt="Kutztown University logo."></div> 
-               
-  <div class="card-box-text"><h3>Kutztown University of Pennsylvania</h3><p>Kutztown, PA</p></div></div><h4>Adjunct Professor  |  2016</h4>
-                                       <p>Led all sculpture courses and operationalized wood- and metal-working studio spaces for Kutztown University. </p>
-                                           <div class="card-box"><div class="card-box-img"><img src="/Assets/Penn.png" alt="University of Pennsylvania logo."></div> 
-               
-  <div class="card-box-text"><h3>University of Pennsylvania</h3><p>Philadelphia, PA</p></div></div><h4>Adjunct Professor  |  2016</h4>
-                                       <p>Designed and implemented an Introduction to Drawing course for undergraduate students and adult learners.</p>
-
-      <div class="card-box"><div class="card-box-img"><img src="/Assets/ICA.png" alt="ICA logo."></div> 
-               
-  <div class="card-box-text"><h3>Institute of Contemporary Art</h3><p>Philadelphia, PA</p></div></div><h4>Graduate Lecturer  |  2015</h4>
-                                       <p>Delivered lectures related to current exhibitions and led public programs to engage exhibition visitors.</p></div>
-                                    <div class="body-card">
-                                      <div class="body-card-header"><h1>Education</h1></div>
-        <div id="Education">                             <div class="card-box"> <div class="card-box-img"><img src="/Assets/Penn.png" alt="University of Pennsylvania logo."></div>
-                                      <div class="card-box-text"><h3>MFA<span style="font-weight: 300;">, Interactive and Time-Based Media</span></h3><p>University of Pennsylvania&nbsp;<br>Philadelphia, PA</p></div></div>
-                                     <div class="card-box"> <div class="card-box-img"> <img src="/Assets/StOlaf.png" alt="Saint Olaf College logo."></div><div class="card-box-text"><h3>BA<span style="font-weight: 300;">, Studio Art with a focus in Education</span></h3><p>Saint Olaf College&nbsp;<br>Northfield, MN</p></div></div>
-  </div></div>
-                                    <div class="body-card">
-                                      <div class="body-card-header"><h1>Awards</h1></div>
-<div id="Awards">                                    <div class="award-box"> <div class="card-box-img"><img src="/Assets/CODiE.png" alt="CODiE award digital badge."></div> <div class="EdText"><h3>SIIA CODiE</h3><p>Best STEM Instructional Solution for Grades PK-8 | 2022</p>
-                                      <p>Best Student Learning Capacity-Building Solution | 2022</p>
-                                      <p>Best Mathematics Instructional Solution for Grades PK-8 | 2020</p></div></div>
-                                      <hr>
-                                      <div class="award-box"> <div class="card-box-img"><img src="/Assets/EdTechAwards.png" alt="EdTech award digital badge."></div><div class="EdText"><h3>The EdTech Awards Cool Tool Winner</h3><p>
-                                      Adaptive Technology Solution | 2022</p><p>E-learning, Blended, or Flipped Solution | 2021</p><p>EdTech Product or Service Setting a Trend | 2021</p><br><br></div></div>
-                                      <div class="award-box"><div class="card-box-img"><img src="/Assets/Tech&Learning.png" alt="Tech & Learning award digital badge."></div><div class="EdText"><h3>Tech&Learning</h3><p>Best Tools for Back to School | 2022</p><p>Award of Excellence: Primary (K-6) Back to School | 2021</p><p>Award of Excellence: Software, Assessment Solution | 2020</p><p>Award of Excellence: Software, Math | 2020</p></div></div>
-                                      
-                                     <div class="award-box">
-                                       <div class="card-box-img"> <img src="/Assets/Edvocate.png" alt="Edvocate award digital badge."></div>
-                                       <div class="EdText"> <h3>The Tech Edvocate Awards Winner</h3><p>Best Early Childhood Education App or Tool | 2022</p></div></div><div class="award-box"><div class="card-box-img"><img src="/Assets/EdTech_Breakthrough.png" alt="EdTech Breakthrough award digital badge."></div><div class="EdText"><h3>EdTech Breakthrough Award</h3><p>Enhanced Curriculum Solution Provider of the Year | 2020
-  </p></div></div></div>
-                                    </div>
-
-                                 
-
-                                    </div>
-</div>
-                                   
-<script>
-    // navigation collapses on small screens
-function myFunction() {
-  var x = document.getElementById("KJBar");
-  if (x.className === "navBar") {
-    x.className += " go";
-  } else {
-    x.className = "navBar";
-  }
-}
-
-// navigation shrinks on scroll
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("KJBar").style.padding = "0px 8px"; 
-     document.getElementById("KJBar").style.background = "rgb(247, 246, 246)";
-    
-   
-  } else {
-    document.getElementById("KJBar").style.padding = "5px 8px";
-         document.getElementById("KJBar").style.background = "rgb(247, 246, 246, 0.0)";
-  }
-}
-</script>
+<!-- ===== FOOTER: same on every page; update the date when content changes ===== -->
+<footer class="site-footer">
+  <ul>
+    <li><a href="mailto:keenan.edu@proton.me">Email</a></li>
+    <li><a href="/CV/Keenan-Jackson-CV.pdf">CV (PDF)</a></li>
+    <!-- LINKEDIN: <li><a href="https://www.linkedin.com/in/YOUR-HANDLE/">LinkedIn</a></li> -->
+  </ul>
+  <p>Last updated November 2026 · © 2026 Keenan Jackson</p>
+</footer>
 </body>
 </html>

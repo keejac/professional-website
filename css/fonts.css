@@ -1,0 +1,11 @@
+/* Self-hosted web fonts. Metropolis by Chris Simpson (public domain, see /fonts/Metropolis-LICENSE.txt). */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis-800.woff2") format("woff2");
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis-600.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
