@@ -1,0 +1,173 @@
+/* keejac.com stylesheet. Sections: 1 Base · 2 Header · 3 Layout & cards · 4 Bio card · 5 Portfolio · 6 Case studies · 7 CV · 8 Footer · 9 Tablet & phone · 10 Motion & print */
+
+/* ===== 1 BASE: colors, fonts, text ===== */
+@font-face { font-family: Metropolis; src: url("/fonts/metropolis-800.woff2") format("woff2"); font-weight: 800; font-display: swap; }
+@font-face { font-family: Metropolis; src: url("/fonts/metropolis-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+:root { --bg: #D6D3D1; --card: rgba(255,255,255,.85); --ink: #111; --muted: #444; --line: #86807D; --accent: #8B0000; --slate: #525766; --tint-a: #EDE5DF; --tint-b: #DFF5F6; --radius: 1rem; --font-body: Arial, Helvetica, sans-serif; --font-display: Metropolis, "Helvetica Neue", Arial, sans-serif; }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: 5rem; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.6 var(--font-body); }
+img { max-width: 100%; height: auto; }
+a { color: var(--accent); text-underline-offset: .15em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 800; line-height: 1.25; letter-spacing: -.005em; }
+h3 { font-size: 1.15rem; margin: 1.5rem 0 .25rem; }
+li { margin-bottom: .6rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip-link { position: absolute; left: 1rem; top: -4rem; z-index: 100; background: #000; color: #fff; padding: .75rem 1rem; border-radius: .5rem; }
+.skip-link:focus { top: 1rem; }
+.button { display: inline-block; padding: .6rem 1.2rem; border-radius: .5rem; background: #000; color: #fff; text-decoration: none; font-weight: 600; }
+.button:hover { background: var(--accent); }
+
+/* ===== 2 HEADER & NAV ===== */
+.site-header { position: sticky; top: 0; z-index: 50; background: #F7F6F6; border-bottom: 1px solid var(--line); }
+.nav { max-width: 72rem; margin: 0 auto; padding: .5rem 1rem; display: flex; align-items: center; gap: 1rem; }
+.nav-home { padding: .5rem; }
+.nav-home img { width: 2rem; display: block; }
+.nav-list { list-style: none; margin: 0 0 0 auto; padding: 0; display: flex; gap: .5rem; }
+.nav-list li { margin: 0; }
+.nav-list a { display: block; padding: .75rem 1rem; color: #000; font-size: 1.1rem; text-decoration: underline 4px transparent; text-underline-offset: .4em; }
+.nav-list a:hover { text-decoration-color: var(--accent); }
+.nav-list a[aria-current="page"] { text-decoration-color: #000; }
+.nav-toggle { display: none; margin-left: auto; background: none; border: 2px solid #000; border-radius: .5rem; padding: .5rem .75rem; cursor: pointer; }
+.nav-toggle svg { display: block; }
+
+/* ===== 3 LAYOUT & CARDS: content left, bio card right ===== */
+.layout { max-width: 72rem; margin: 0 auto; padding: 2rem 1rem 3rem; display: grid; grid-template-columns: minmax(0,1fr) 18rem; grid-template-areas: "main bio"; gap: 2rem; align-items: start; }
+main { grid-area: main; min-width: 0; display: flex; flex-direction: column; gap: 2.5rem; }
+.page-head { padding: .75rem 1.5rem; background: #000; color: #fff; border-radius: var(--radius); text-align: center; }
+.page-head h1 { margin: 0; font-size: clamp(1.75rem, 4vw, 2.75rem); }
+.page-head p { margin: .25rem 0 .5rem; color: #D6D3D1; }
+.card { background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); padding: 0 1.5rem 1.5rem; }
+.card > h2:first-child { margin: -1.25rem auto 1rem; max-width: 85%; padding: .35rem 1rem; text-align: center; background: #000; color: #fff; border-radius: var(--radius); font-size: 1.5rem; }
+.card > :first-child:not(h2) { margin-top: 1.5rem; }
+.card img.wide { display: block; width: 100%; border-radius: var(--radius); margin: 1rem 0; }
+
+/* ===== 4 BIO CARD: headshot breaks out of the top edge ===== */
+.bio { grid-area: bio; position: sticky; top: 10rem; margin-top: 4.5rem; background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); padding: 0 1.5rem 1.5rem; text-align: center; }
+.bio img { display: block; width: 150px; height: 150px; max-width: none; aspect-ratio: 1; object-fit: cover; border: 2px solid #000; border-radius: 50%; margin: -4.5rem auto .75rem; background: var(--bg); }
+.bio-name { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; margin: 0; }
+.bio-role { margin: .25rem 0 1rem; color: var(--muted); font-size: .95rem; }
+.bio-links { list-style: none; padding: 0; margin: 1rem 0 0; }
+.bio-links li { margin: .4rem 0; }
+.bio-links a[href$=".pdf"] { white-space: nowrap; }
+
+/* ===== 5 PORTFOLIO: two-column grid of cards; image on top, flush to the card edges ===== */
+.project-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.5rem; }
+.project-grid li { margin: 0; display: flex; }
+.project { position: relative; display: flex; flex-direction: column; width: 100%; overflow: hidden; background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); }
+.project:hover, .project:focus-within { border-color: #000; box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+.project figure { margin: 0; line-height: 0; border-bottom: 2px solid var(--line); background: #fff; }
+.project figure img { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; }
+.project-text { padding: 1.25rem 1.5rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
+.project h2 { margin: 0 0 .35rem; font-size: 1.25rem; }
+.project h2 a { color: #000; text-decoration: none; }
+.project h2 a::after { content: ""; position: absolute; inset: 0; }
+.project:hover h2 a { text-decoration: underline; }
+.project p { margin: .25rem 0; }
+.project .meta { color: var(--muted); font-size: .95rem; }
+.project .result { font-weight: 700; margin-top: auto; padding-top: .75rem; }
+
+/* ===== 6 CASE STUDIES: course cards and fixed Back/Next buttons ===== */
+.course-card { margin: 1.5rem 0; padding: .25rem 1.25rem 1rem; border: 2px solid var(--line); border-radius: var(--radius); background: var(--tint-a); }
+.course-card:nth-of-type(even) { background: var(--tint-b); }
+.course-head { display: flex; gap: 1rem; align-items: center; margin-top: 1rem; }
+.course-head img { width: 9rem; border-radius: .5rem; flex: none; }
+.course-head h3 { margin: 0; }
+.course-head p { margin: .25rem 0 0; color: var(--muted); }
+.has-pager .layout { max-width: 84rem; padding-inline: 7rem; }
+.pager a { position: fixed; z-index: 40; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: .5rem; padding: .85rem 1rem; background: var(--slate); color: #fff; text-decoration: none; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.pager .prev { left: 0; border-radius: 0 .75rem .75rem 0; transform-origin: left; }
+.pager .next { right: 0; border-radius: .75rem 0 0 .75rem; transform-origin: right; }
+.pager a:hover, .pager a:focus-visible { background: var(--accent); transform: translateY(-50%) scale(1.15); }
+.pager .arrow { font-size: 1.3rem; line-height: 1; }
+.pager-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.pager-title::before { content: ": "; }
+.funnel { margin: 1rem 0 1.5rem; padding: 1.25rem 1.5rem; background: #fff; border: 2px solid var(--line); border-radius: var(--radius); }
+.funnel figcaption { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; margin-bottom: 1rem; }
+.funnel ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+.funnel li { position: relative; margin: 0; display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .25rem 1rem; align-items: center; border-radius: .5rem; }
+.funnel .label { grid-column: 1 / -1; }
+.funnel .track { height: 1.25rem; background: #EFEDEB; border-radius: 4px; }
+.funnel .bar { display: block; height: 100%; width: var(--v); background: var(--slate); border-radius: 4px; }
+.funnel li:last-child .bar { background: var(--accent); }
+.funnel .value { font-weight: 700; font-variant-numeric: tabular-nums; }
+.funnel .tip { position: absolute; right: 0; top: -.2rem; z-index: 2; padding: .4rem .6rem; border-radius: .4rem; background: #000; color: #fff; font-size: .85rem; white-space: nowrap; opacity: 0; pointer-events: none; }
+.funnel li:hover .tip, .funnel li:focus .tip { opacity: 1; }
+.funnel li:hover .bar, .funnel li:focus .bar { filter: brightness(1.15); }
+.funnel .source { margin: 1rem 0 0; color: var(--muted); font-size: .9rem; }
+
+/* ===== 7 CV: logo-led job entries, awards, skills ===== */
+.job { margin-top: 2.25rem; }
+.job:first-of-type { margin-top: .5rem; }
+.job-head { display: flex; gap: 1.25rem; align-items: center; }
+.job-head img, .monogram { width: 5rem; height: 5rem; flex: none; object-fit: contain; }
+.monogram { display: grid; place-items: center; border: 2px solid #000; border-radius: .75rem; background: #fff; font: 800 1.05rem var(--font-display); }
+.job-head h3 { margin: 0; font-size: 1.2rem; }
+.job-head h3 span, .job h4 span { font-weight: 400; }
+.job-head p { margin: .15rem 0 0; color: var(--muted); }
+.job h4 span { color: var(--muted); }
+.job h4 { margin: 1.25rem 0 .25rem; font-size: 1.05rem; }
+.job .lead { margin: .25rem 0 .5rem; }
+.award { display: grid; grid-template-columns: 8rem 1fr; gap: 1.5rem; align-items: center; padding: 1.25rem 0; border-bottom: 1px solid #c9c4c1; }
+.award:last-child { border-bottom: 0; }
+.award h3 { margin: 0 0 .35rem; }
+.award ul { list-style: none; padding: 0; margin: 0; }
+.award li { margin: .2rem 0; }
+.award li span { color: var(--muted); }
+.skills dt { font-weight: 700; margin-top: .75rem; }
+.skills dd { margin: .15rem 0 0; }
+
+/* ===== 8 FOOTER ===== */
+.site-footer { border-top: 1px solid var(--line); background: #F7F6F6; padding: 1.5rem 1rem; text-align: center; font-size: .95rem; }
+.site-footer ul { list-style: none; padding: 0; margin: 0 0 .5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.site-footer li { margin: 0; }
+.site-footer p { margin: .25rem 0; color: var(--muted); }
+
+/* ===== 9 TABLET & PHONE ===== */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0,1fr); grid-template-areas: "bio" "main"; }
+  .bio { position: static; margin-top: 3rem; padding: 0 1.25rem 1.25rem; display: grid; grid-template-columns: 120px minmax(0,1fr); column-gap: 1.25rem; align-items: start; text-align: left; }
+  .bio img { width: 120px; height: 120px; margin: -2.25rem 0 0; grid-row: 1 / span 3; }
+  .bio-name { padding-top: 1rem; }
+  .bio-links { margin: .5rem 0 0; }
+  .bio-intro { grid-column: 1 / -1; margin-top: 1rem; }
+  .bio--compact { margin-top: 2.5rem; padding-bottom: 1rem; grid-template-columns: 84px minmax(0,1fr); }
+  .bio--compact img { width: 84px; height: 84px; margin-top: -1.75rem; grid-row: 1 / span 2; }
+  .bio--compact .bio-name { padding-top: .75rem; }
+  .bio--compact .bio-role { margin: 0; }
+  .bio--compact .bio-intro, .bio--compact .bio-links { display: none; }
+}
+@media (max-width: 700px) {
+  .nav { flex-wrap: wrap; }
+  .nav-toggle { display: block; }
+  .nav-list { display: none; width: 100%; flex-direction: column; margin: 0; }
+  .nav-list.is-open { display: flex; }
+  .card { padding: 0 1rem 1rem; }
+  .project-grid { grid-template-columns: 1fr; }
+  .course-head { flex-direction: column; align-items: flex-start; }
+  .course-head img { width: 100%; }
+  .has-pager { padding-bottom: 4.5rem; }
+  .has-pager .layout { padding-inline: 1rem; }
+  .pager a { top: auto; bottom: max(.75rem, env(safe-area-inset-bottom, 0px)); transform: none; }
+  .pager a:hover, .pager a:focus-visible { transform: scale(1.1); }
+  .job-head img, .monogram { width: 3.5rem; height: 3.5rem; }
+  .award { grid-template-columns: 5rem 1fr; gap: 1rem; }
+}
+
+/* ===== 10 MOTION & PRINT ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .nav-list a { transition: text-decoration-color .3s; }
+  .project, .button { transition: background-color .3s, border-color .3s, box-shadow .3s; }
+  .pager a { transition: background-color .3s, transform .2s; }
+  .funnel .bar { animation: grow .8s ease-out both; transform-origin: left; }
+  .funnel .tip { transition: opacity .15s; }
+  @keyframes grow { from { transform: scaleX(0); } }
+}
+@media print {
+  .site-header, .site-footer, .bio, .pager { display: none; }
+  body { background: #fff; }
+  .layout { display: block; }
+  .card { border: 0; }
+}
